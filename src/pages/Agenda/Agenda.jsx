@@ -9,7 +9,7 @@ function Agenda() {
   return (
     <div className="flex flex-col items-center min-h-screen">
       <div className="flex justify-center logo-container">
-        <img src="/public/mellow_logo.png" className="logo" alt="Mellow Tempo Logo" />
+        <img src="mellow_logo.png" className="logo" alt="Mellow Tempo Logo" />
       </div>
       
       <div className="my-6">
@@ -20,7 +20,7 @@ function Agenda() {
 
       <div className="flex justify-center">
         <img
-          src="/public/Agenda.png"
+          src="Agenda.png"
           className="agenda"
           alt="Concert Agenda"
           onClick={openModal}
@@ -34,7 +34,7 @@ function Agenda() {
             <span className="modal-close" onClick={closeModal}>
               &times;
             </span>
-            <img src="/public/Agenda.png" className="modal-image" alt="Concert Agenda" />
+            <img src="Agenda.png" className="modal-image" alt="Concert Agenda" />
           </div>
         </div>
       )}

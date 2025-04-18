@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from "react";
 
 function Activity() {
   const images = [
-    { src: "/public/mainActivity.png", alt: "Main Activity" },
-    { src: "/public/firstActivity.png", alt: "First Activity" },
-    { src: "/public/secondActivity.png", alt: "Second Activity" },
+    { src: "mainActivity.png", alt: "Main Activity" },
+    { src: "firstActivity.png", alt: "First Activity" },
+    { src: "secondActivity.png", alt: "Second Activity" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
