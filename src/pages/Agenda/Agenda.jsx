@@ -11,10 +11,10 @@ function Agenda() {
       <div className="flex justify-center logo-container">
         <img src="mellow_logo.png" className="logo" alt="Mellow Tempo Logo" />
       </div>
-      
+
       <div className="my-6">
-        <a className="info-button" href="/activity">
-           Go To Activity
+        <a className="info-button" href="/floorplan">
+          Go To FloorPlan
         </a>
       </div>
 
@@ -34,10 +34,19 @@ function Agenda() {
             <span className="modal-close" onClick={closeModal}>
               &times;
             </span>
-            <img src="Agenda.png" className="modal-image" alt="Concert Agenda" />
+            <img
+              src="Agenda.png"
+              className="modal-image"
+              alt="Concert Agenda"
+            />
           </div>
         </div>
       )}
+      <div className="my-6">
+        <a className="info-button" href="/">
+          Back To Home Page
+        </a>
+      </div>
     </div>
   );
 }

@@ -84,13 +84,8 @@ function Activity() {
 
   return (
     <div className="flex flex-col items-center min-h-screen">
-      <div className="flex justify-center w-full logo-container">
+      <div className="flex justify-center w-full logo-container mb-5">
         <img src="mellow_logo.png" className="logo" alt="Mellow Tempo Logo" />
-      </div>
-      <div className="my-6">
-        <a className="info-button" href="/agenda">
-          Back To Agenda
-        </a>
       </div>
       <div
         className="carousel w-full max-w-4xl overflow-hidden"
@@ -99,7 +94,9 @@ function Activity() {
       >
         <div
           className="carousel-wrapper flex"
-          style={{ transform: `translateX(-${(currentIndex % images.length) * 100}%)` }}
+          style={{
+            transform: `translateX(-${(currentIndex % images.length) * 100}%)`,
+          }}
         >
           {displayImages.map((image) => (
             <div key={image.key} className="carousel-item flex-shrink-0 w-full">
@@ -115,6 +112,11 @@ function Activity() {
             ❯
           </button>
         </div>
+      </div>
+      <div className="my-6">
+        <a className="info-button" href="/floorplan">
+          Back To Floor Plan
+        </a>
       </div>
     </div>
   );
