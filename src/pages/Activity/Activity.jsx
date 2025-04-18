@@ -85,7 +85,7 @@ function Activity() {
   return (
     <div className="flex flex-col items-center min-h-screen">
       <div className="flex justify-center w-full logo-container">
-        <img src="/public/mellow_logo.png" className="logo" alt="Mellow Tempo Logo" />
+        <img src="mellow_logo.png" className="logo" alt="Mellow Tempo Logo" />
       </div>
       <div className="my-6">
         <a className="info-button" href="/agenda">
