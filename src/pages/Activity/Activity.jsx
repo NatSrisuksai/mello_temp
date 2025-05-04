@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function Activity() {
   const images = [
@@ -85,7 +86,7 @@ function Activity() {
   return (
     <div className="flex flex-col items-center min-h-screen">
       <div className="flex justify-center w-full logo-container mb-5">
-        <img src="mellow_logo.png" className="logo" alt="Mellow Tempo Logo" />
+        <LazyLoadImage src="mellow_logo.png" className="logo" alt="Mellow Tempo Logo" />
       </div>
       <div
         className="carousel w-full max-w-4xl overflow-hidden"
@@ -100,7 +101,7 @@ function Activity() {
         >
           {displayImages.map((image) => (
             <div key={image.key} className="carousel-item flex-shrink-0 w-full">
-              <img src={image.src} className="activity" alt={image.alt} />
+              <LazyLoadImage src={image.src} className="activity" alt={image.alt} />
             </div>
           ))}
         </div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function FloorPlan() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -9,7 +10,7 @@ function FloorPlan() {
   return (
     <div className="flex flex-col items-center min-h-screen">
       <div className="flex justify-center logo-container">
-        <img src="mellow_logo.png" className="logo" alt="Mellow Tempo Logo" />
+        <LazyLoadImage src="mellow_logo.png" className="logo" alt="Mellow Tempo Logo" />
       </div>
 
       <div className="my-6">
@@ -19,7 +20,7 @@ function FloorPlan() {
       </div>
 
       <div className="flex justify-center">
-        <img
+        <LazyLoadImage
           src="floorPlan.png"
           className="agenda"
           alt="Concert Agenda"
@@ -34,7 +35,7 @@ function FloorPlan() {
             <span className="modal-close" onClick={closeModal}>
               &times;
             </span>
-            <img
+            <LazyLoadImage
               src="floorPlan.png"
               className="modal-image"
               alt="Concert Agenda"

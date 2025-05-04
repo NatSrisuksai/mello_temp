@@ -1,10 +1,11 @@
 import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function HomePage() {
   return (
     <div className="flex flex-col items-center justify-between min-h-screen">
       <div className="flex justify-center w-full logo-container">
-        <img src="mellow_logo.png" className="logo" alt="Mellow Tempo Logo" />
+        <LazyLoadImage src="mellow_logo.png" className="logo" alt="Mellow Tempo Logo" />
       </div>
       <div className="my-6">
         <a className="info-button" href="/agenda">
@@ -13,7 +14,7 @@ function HomePage() {
       </div>
 
       <div className="flex justify-center w-full">
-        <img src="artist.png" className="artist" alt="Concert Artists" />
+        <LazyLoadImage src="artist.png" className="artist" alt="Concert Artists" />
       </div>
     </div>
   );
